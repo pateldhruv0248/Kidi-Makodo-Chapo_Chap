@@ -23,7 +23,7 @@ class _SettingsState extends State<Settings> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text('Difficulty:  ' + simplicity.toString(), style: kTextStyle),
+            Text('Simplicity:  ' + simplicity.toString(), style: kTextStyle),
             SizedBox(height: 10.0),
             Slider(
               value: simplicity.toDouble(),
@@ -39,7 +39,7 @@ class _SettingsState extends State<Settings> {
               divisions: 99,
             ),
             SizedBox(height: 10.0),
-            RaisedButton(
+            ElevatedButton(
               child: Text('OK'),
               onPressed: () {
                 Navigator.pop(context);

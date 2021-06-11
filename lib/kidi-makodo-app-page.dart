@@ -211,7 +211,7 @@ class _KidiMakodoAppState extends State<KidiMakodoApp> {
               alignment: Alignment.center,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.baseline,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(winLose, style: kTextStyle),
                   SizedBox(
