@@ -48,14 +48,7 @@ class _SettingsState extends State<Settings> {
               onPressed: () {
                 Navigator.pop(context);
               },
-            )
-            // ,
-            // ElevatedButton(
-            //   child: Text('OK'),
-            //   onPressed: () {
-            //     Navigator.pop(context);
-            //   },
-            // ),
+            ),
           ],
         ),
       ),
