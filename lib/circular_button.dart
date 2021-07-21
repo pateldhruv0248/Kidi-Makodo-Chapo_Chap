@@ -15,6 +15,7 @@ class CircularButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.width * 0.7,
       alignment: Alignment.center,
       padding: EdgeInsets.all(100.0),
       child: FittedBox(
