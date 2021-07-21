@@ -39,12 +39,23 @@ class _SettingsState extends State<Settings> {
               divisions: 99,
             ),
             SizedBox(height: 10.0),
-            ElevatedButton(
-              child: Text('OK'),
+            MaterialButton(
+              child: Text(
+                'OK',
+                style: TextStyle(color: kSecondaryColour),
+              ),
+              color: kInactiveButtonColour,
               onPressed: () {
                 Navigator.pop(context);
               },
-            ),
+            )
+            // ,
+            // ElevatedButton(
+            //   child: Text('OK'),
+            //   onPressed: () {
+            //     Navigator.pop(context);
+            //   },
+            // ),
           ],
         ),
       ),
