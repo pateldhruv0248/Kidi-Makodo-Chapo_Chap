@@ -24,30 +24,27 @@ class _KidiMakodoAppState extends State<KidiMakodoApp> {
   String winLose = 'Winner or Loser ?';
   int timeStamp = 0;
   Color kFLashLight = kUnflashColour;
-  bool flag = false;
+  bool soundFinishedFlag = false;
+
   void animateHand() {
     handAnimation = handAnimation;
   }
 
   final assetsAudioPlayer = AssetsAudioPlayer();
   void musicBox() async {
-    timer.start();
     await assetsAudioPlayer.open(
       Playlist(audios: [
-        Audio('assets/kidi', playSpeed: Random().nextInt(5) + 1.1),
-        Audio('assets/makodo', playSpeed: Random().nextInt(5) + 1.1),
-        Audio('assets/chapochap', playSpeed: Random().nextInt(6) + 1.1)
+        Audio('assets/kidi', playSpeed: Random().nextInt(5) + 1.0),
+        Audio('assets/makodo', playSpeed: Random().nextInt(5) + 1.0),
+        Audio('assets/chapochap', playSpeed: Random().nextInt(6) + 1.0)
       ]),
     );
     try {
       await assetsAudioPlayer.playlistFinished
           .where((finished) => finished == true)
           .first;
-      setState(() {
-        kFLashLight = kFlashColour;
-      });
-      timer.reset();
-      flag = true;
+      timer.start();
+      soundFinishedFlag = true;
     } catch (e) {
       print('error');
     }
@@ -58,7 +55,7 @@ class _KidiMakodoAppState extends State<KidiMakodoApp> {
     setState(
       () {
         if (buttonStatus == textToShow.PressHold) {
-          if (flag) {
+          if (soundFinishedFlag) {
             if (timeStamp <= simplicity && timeStamp > 0) {
               winLose = 'You Win, Play again  -';
               handAnimation = "Winner";
@@ -77,11 +74,12 @@ class _KidiMakodoAppState extends State<KidiMakodoApp> {
           buttonStatus = textToShow.PressHold;
           handAnimation = "Idle";
           kFLashLight = kUnflashColour;
+          timeStamp = 0;
         }
         animateHand();
         timer.stop();
         timer.reset();
-        flag = false;
+        soundFinishedFlag = false;
         kButtonColour = kInactiveButtonColour;
       },
     );
@@ -245,6 +243,10 @@ class _KidiMakodoAppState extends State<KidiMakodoApp> {
                       } else {
                         timeStamp = 0;
                         winLose = 'Kidi Makodo Chapo Chap  -';
+                        timer.stop();
+                        timer.reset();
+                        assetsAudioPlayer.stop();
+                        soundFinishedFlag = false;
                       }
                     },
                   );
