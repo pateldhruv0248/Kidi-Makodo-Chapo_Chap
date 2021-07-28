@@ -12,8 +12,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Kidi-Makodo-App',
       home: KidiMakodoApp(),
-      );
+    );
   }
 }
