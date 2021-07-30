@@ -7,9 +7,9 @@ class CircularButton extends StatelessWidget {
   final Color borderColour;
 
   CircularButton({
-    this.colour,
-    this.title,
-    this.borderColour,
+    required this.colour,
+    required this.title,
+    this.borderColour = kBorderColour,
   });
 
   @override
@@ -30,7 +30,7 @@ class CircularButton extends StatelessWidget {
         color: colour,
         border: Border.all(
           width: 10,
-          color: kBorderColour,
+          color: borderColour,
         ),
       ),
     );

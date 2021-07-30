@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'dart:math';
-import 'package:kidimakodochapochap/constants.dart';
+import 'constants.dart';
 import 'settings.dart';
 import 'circular_button.dart';
 
