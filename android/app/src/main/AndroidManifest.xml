@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kidi_makodo_chapo_chap">
    <application
-        android:label="kidi_makodo_chapo_chap"
+        android:label="Kidi Makodo Chapo Chap"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
