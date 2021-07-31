@@ -1,16 +1,17 @@
-# kidi_makodo_chapo_chap
 
-A new Flutter project.
+# Kidi-Makodo-Chapo-Chap
 
-## Getting Started
+A mobile application on a gujarati folk reaction game called 'Kidi-Makodo-Chapo-Chap'.
 
-This project is a starting point for a Flutter application.
+## The Actual Game
+Initially, children have to place their index finger under the palm of the person saying the 4 words. After that, the palm closes and tries to capture the index fingers. If the child is able to react on time, It is a victory!
 
-A few resources to get you started if this is your first Flutter project:
+## The Mobile Game
+* Press and hold the button
+* Wait for the audio of 'Kidi-Makodo-Chapo-Chap' to finish
+* Release the button within the given time (default time 250ms)
+* Press REPLAY to start again
+## Demo
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Check the above link to watch a samll demo
+https://www.youtube.com/watch?v=TB7qH6oIzMg
