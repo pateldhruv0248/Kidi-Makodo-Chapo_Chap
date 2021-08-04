@@ -14,8 +14,7 @@ Initially, children have to place their index finger under the palm of the perso
 
 ## Demo
 
-Check the above link to watch a samll demo
-https://www.youtube.com/watch?v=TB7qH6oIzMg
+Check the above link to watch a small [demo](https://www.youtube.com/watch?v=TB7qH6oIzMg)
 
 ## Screenshots
 ![1627455058578-imresizer](https://user-images.githubusercontent.com/48350577/127742331-341990f9-79d0-417b-b02c-9fc65e5fefc1.png)
