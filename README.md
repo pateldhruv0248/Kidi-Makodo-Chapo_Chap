@@ -16,6 +16,10 @@ Initially, children have to place their index finger under the palm of the perso
 
 Check the above link to watch a small [demo](https://www.youtube.com/watch?v=TB7qH6oIzMg)
 
+## Playstore App
+
+Download the game [here](https://play.google.com/store/apps/details?id=com.presipatel.kidimakodochapochap).
+
 ## Screenshots
 ![1627455058578-imresizer](https://user-images.githubusercontent.com/48350577/127742331-341990f9-79d0-417b-b02c-9fc65e5fefc1.png)
 ![1627455062924-imresizer](https://user-images.githubusercontent.com/48350577/127742475-66df76cc-ff58-4f37-bc6e-3e1d71ac22f2.png)
